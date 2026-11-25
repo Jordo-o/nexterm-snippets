@@ -1,0 +1,3 @@
+# @name: docker | Run Container with Volume Mount
+# @description: Runs a container with volume mounting Group: Docker Container Management. Template: replace placeholders before running. {host_path} = Host directory path | {container_path} = Container directory path | {container_name} = Name for the container | {image_name} = Docker image to run
+docker run -d -v {host_path}:{container_path} --name {container_name} {image_name}

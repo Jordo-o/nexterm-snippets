@@ -1,0 +1,3 @@
+# @name: sed-awk | Find Maximum Value
+# @description: Finds maximum value in a field Group: Awk Mathematical Operations. Template: replace placeholders before running. {field_number} = Field number to check [default "1"] | {file} = Path to the file
+awk 'NR==1{max=${field_number}} ${field_number}>max{max=${field_number}} END{print max}' {file}

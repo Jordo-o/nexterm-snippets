@@ -1,0 +1,3 @@
+# @name: jq | Add Field to Object
+# @description: Adds a new field to a JSON object Group: JQ Object Operations. Template: replace placeholders before running. {field_name} = Name of the field to add | {value} = Value for the new field | {json_file} = Path to JSON file or '-' for stdin
+jq '. + {"{field_name}": "{value}"}' {json_file}

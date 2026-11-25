@@ -1,0 +1,3 @@
+# @name: postgresql | Show Table Sizes
+# @description: Shows sizes of all tables Group: PostgreSQL Performance and Monitoring.
+psql -c "SELECT schemaname,tablename,pg_size_pretty(pg_total_relation_size(schemaname||'.'||tablename)) as size FROM pg_tables ORDER BY pg_total_relation_size(schemaname||'.'||tablename) DESC;"

@@ -1,0 +1,3 @@
+# @name: kubernetes | Delete All Resources in Namespace
+# @description: Deletes all resources in a namespace Group: Kubernetes Resource Cleanup. Template: replace placeholders before running. {namespace_name} = Name of the namespace
+kubectl delete all --all -n {namespace_name}

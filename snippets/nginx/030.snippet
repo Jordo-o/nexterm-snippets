@@ -1,0 +1,3 @@
+# @name: nginx | Check SSL Certificate Expiry
+# @description: Shows SSL certificate expiry dates Group: Nginx SSL/TLS Management. Template: replace placeholders before running. {cert_file} = Certificate file path [default "/etc/nginx/ssl/certificate.crt"]
+openssl x509 -in {cert_file} -noout -dates

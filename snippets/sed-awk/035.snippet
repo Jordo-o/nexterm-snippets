@@ -1,0 +1,3 @@
+# @name: sed-awk | Multiple Conditions
+# @description: Prints lines meeting multiple conditions Group: Awk Pattern Matching. Template: replace placeholders before running. {field1} = First field number [default "1"] | {value1} = First value to match | {field2} = Second field number [default "2"] | {operator} = Comparison operator [default ">"] | {value2} = Second value to compare [default "0"] | {file} = Path to the file
+awk '${field1} == "{value1}" && ${field2} {operator} {value2}' {file}

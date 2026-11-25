@@ -1,0 +1,3 @@
+# @name: jq | Filter by Field Value
+# @description: Filters array elements by field value Group: JQ Filtering and Selection. Template: replace placeholders before running. {field_name} = Field name to filter by | {value} = Value to match | {json_file} = Path to JSON file or '-' for stdin
+jq '.[] | select(.{field_name} == "{value}")' {json_file}

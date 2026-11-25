@@ -1,0 +1,3 @@
+# @name: curl | Multiple Headers
+# @description: Makes a request with multiple headers Group: Curl Headers and Options. Template: replace placeholders before running. {header1} = First header name [default "Content-Type"] | {value1} = First header value [default "application/json"] | {header2} = Second header name [default "Accept"] | {value2} = Second header value [default "application/json"] | {url} = URL to request
+curl -H "{header1}: {value1}" -H "{header2}: {value2}" {url}

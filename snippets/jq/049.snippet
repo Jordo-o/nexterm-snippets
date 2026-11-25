@@ -1,0 +1,3 @@
+# @name: jq | Merge Objects
+# @description: Merges current object with another object Group: JQ Advanced Operations. Template: replace placeholders before running. {merge_object} = Object to merge with [default "{\"key\": \"value\"}"] | {json_file} = Path to JSON file or '-' for stdin
+jq '. * {merge_object}' {json_file}

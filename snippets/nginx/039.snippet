@@ -1,0 +1,3 @@
+# @name: nginx | Check Nginx Memory Usage
+# @description: Shows total memory usage of Nginx processes Group: Nginx Performance Monitoring.
+ps aux | grep nginx | awk '{sum+=$6} END {print "Total Memory Usage: " sum/1024 " MB"}'

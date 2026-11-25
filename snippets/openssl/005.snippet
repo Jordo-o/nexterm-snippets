@@ -1,0 +1,3 @@
+# @name: openssl | Generate ECDSA Private Key
+# @description: Generates an ECDSA private key with specified curve Group: Key Management. Template: replace placeholders before running. {curve_name} = Elliptic curve name (e.g., secp256r1) [default "secp256r1"] | {key_file} = Output file for private key [default "eckey.pem"]
+openssl ecparam -genkey -name {curve_name} -out {key_file}

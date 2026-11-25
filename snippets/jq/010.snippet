@@ -1,0 +1,3 @@
+# @name: jq | Filter by Field Existence
+# @description: Filters elements that have a specific field Group: JQ Filtering and Selection. Template: replace placeholders before running. {field_name} = Field name to check for | {json_file} = Path to JSON file or '-' for stdin
+jq '.[] | select(has("{field_name}"))' {json_file}

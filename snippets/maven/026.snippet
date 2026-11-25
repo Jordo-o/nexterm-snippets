@@ -1,0 +1,3 @@
+# @name: maven | Create New Project
+# @description: Creates a new project from a Maven archetype Group: Maven Archetype Commands. Template: replace placeholders before running. {group_id} = Group ID for the new project | {artifact_id} = Artifact ID for the new project | {archetype_id} = Archetype ID (e.g., maven-archetype-quickstart) [default "maven-archetype-quickstart"]
+mvn archetype:generate -DgroupId={group_id} -DartifactId={artifact_id} -DarchetypeArtifactId={archetype_id} -DinteractiveMode=false

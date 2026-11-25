@@ -1,0 +1,3 @@
+# @name: kubernetes | Rollback Deployment
+# @description: Rolls back a deployment to the previous version Group: Kubernetes Deployment Management. Template: replace placeholders before running. {deployment_name} = Name of the deployment
+kubectl rollout undo deployment/{deployment_name}

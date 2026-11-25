@@ -1,0 +1,3 @@
+# @name: sed-awk | Substitute on Specific Line
+# @description: Replaces text only on a specific line Group: Sed Pattern Matching and Substitution. Template: replace placeholders before running. {line_number} = Line number to modify [default "1"] | {old_text} = Text to replace | {new_text} = Replacement text | {file} = Path to the file
+sed '{line_number}s/{old_text}/{new_text}/' {file}

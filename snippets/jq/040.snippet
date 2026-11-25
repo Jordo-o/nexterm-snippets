@@ -1,0 +1,3 @@
+# @name: jq | Default Value
+# @description: Uses default value if field is null Group: JQ Conditional Operations. Template: replace placeholders before running. {field_name} = Field name to check | {default_value} = Default value to use | {json_file} = Path to JSON file or '-' for stdin
+jq '.{field_name} // "{default_value}"' {json_file}

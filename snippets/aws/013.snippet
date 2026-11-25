@@ -1,0 +1,3 @@
+# @name: aws | Attach Volume to Instance
+# @description: Attaches an EBS volume to an EC2 instance Group: AWS EC2 Commands. Template: replace placeholders before running. {volume_id} = The ID of the EBS volume | {instance_id} = The ID of the EC2 instance | {device_name} = The device name (e.g., /dev/xvdf) [default "/dev/xvdf"]
+aws ec2 attach-volume --volume-id {volume_id} --instance-id {instance_id} --device {device_name}

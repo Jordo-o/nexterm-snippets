@@ -1,0 +1,3 @@
+# @name: curl | Connection Test
+# @description: Tests connection and total time Group: Curl Performance Testing. Template: replace placeholders before running. {url} = URL to test
+curl -w "Connect: %{time_connect}s, Total: %{time_total}s\n" -o /dev/null -s {url}

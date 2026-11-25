@@ -1,0 +1,3 @@
+# @name: aws | Get CloudWatch Logs
+# @description: Gets log events from CloudWatch Group: AWS CloudWatch Commands. Template: replace placeholders before running. {log_group} = Name of the log group | {log_stream} = Name of the log stream
+aws logs get-log-events --log-group-name {log_group} --log-stream-name {log_stream}

@@ -1,0 +1,3 @@
+# @name: nginx | Test Configuration with Specific File
+# @description: Tests a specific Nginx configuration file Group: Nginx Configuration Management. Template: replace placeholders before running. {config_file} = Path to the configuration file [default "/etc/nginx/nginx.conf"]
+sudo nginx -t -c {config_file}

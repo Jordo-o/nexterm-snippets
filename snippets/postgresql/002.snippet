@@ -1,0 +1,3 @@
+# @name: postgresql | Connect with Password Prompt
+# @description: Connects to PostgreSQL with password prompt Group: PostgreSQL Connection and Authentication. Template: replace placeholders before running. {host} = Database host [default "localhost"] | {port} = Database port [default "5432"] | {username} = Database username [default "postgres"] | {database} = Database name [default "postgres"]
+psql -h {host} -p {port} -U {username} -W -d {database}

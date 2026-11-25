@@ -1,0 +1,3 @@
+# @name: postgresql | Restore Database
+# @description: Restores a database from a backup file Group: PostgreSQL Backup and Restore. Template: replace placeholders before running. {host} = Database host [default "localhost"] | {port} = Database port [default "5432"] | {username} = Database username [default "postgres"] | {database_name} = Name of the database to restore | {backup_file} = Name of the backup file [default "backup.sql"]
+psql -h {host} -p {port} -U {username} -d {database_name} < {backup_file}

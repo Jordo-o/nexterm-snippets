@@ -1,0 +1,3 @@
+# @name: nginx | Disable Virtual Host
+# @description: Disables a virtual host by removing the symbolic link Group: Nginx Virtual Host Management. Template: replace placeholders before running. {site_name} = Name of the site configuration file
+sudo rm /etc/nginx/sites-enabled/{site_name}

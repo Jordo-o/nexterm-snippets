@@ -1,0 +1,3 @@
+# @name: curl | Upload File with Field Name
+# @description: Uploads a file with a specific field name Group: Curl File Operations. Template: replace placeholders before running. {field_name} = Form field name [default "upload"] | {file_path} = Path to the file to upload | {url} = URL to upload to
+curl -F "{field_name}=@{file_path}" {url}

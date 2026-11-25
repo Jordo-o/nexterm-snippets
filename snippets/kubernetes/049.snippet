@@ -1,0 +1,3 @@
+# @name: kubernetes | Drain Node
+# @description: Drains a node for maintenance Group: Kubernetes Cluster Management. Template: replace placeholders before running. {node_name} = Name of the node to drain
+kubectl drain {node_name} --ignore-daemonsets

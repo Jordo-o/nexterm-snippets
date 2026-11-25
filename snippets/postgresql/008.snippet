@@ -1,0 +1,3 @@
+# @name: postgresql | Create Database with Template
+# @description: Creates a database from a template Group: PostgreSQL Database Management. Template: replace placeholders before running. {host} = Database host [default "localhost"] | {port} = Database port [default "5432"] | {username} = Database username [default "postgres"] | {template} = Template database name [default "template0"] | {database_name} = Name of the database to create
+createdb -h {host} -p {port} -U {username} -T {template} {database_name}

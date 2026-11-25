@@ -1,0 +1,3 @@
+# @name: kubernetes | Create ConfigMap from File
+# @description: Creates a ConfigMap from a file Group: Kubernetes ConfigMap and Secret Management. Template: replace placeholders before running. {configmap_name} = Name of the ConfigMap | {file_path} = Path to the file
+kubectl create configmap {configmap_name} --from-file={file_path}

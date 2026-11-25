@@ -1,0 +1,3 @@
+# @name: nginx | Enable Virtual Host
+# @description: Enables a virtual host by creating a symbolic link Group: Nginx Virtual Host Management. Template: replace placeholders before running. {site_name} = Name of the site configuration file
+sudo ln -s /etc/nginx/sites-available/{site_name} /etc/nginx/sites-enabled/

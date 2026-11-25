@@ -1,0 +1,3 @@
+# @name: curl | Multiple Requests
+# @description: Makes multiple requests and shows timing for each Group: Curl Performance Testing. Template: replace placeholders before running. {url1} = First URL to request | {url2} = Second URL to request
+curl -w "Request %{url_effective}: %{time_total}s\n" -o /dev/null -s {url1} {url2}

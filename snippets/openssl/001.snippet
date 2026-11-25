@@ -1,0 +1,3 @@
+# @name: openssl | Generate Self-Signed Certificate
+# @description: Generates a self-signed certificate with a new private key Group: Certificate Management. Template: replace placeholders before running. {key_bits} = RSA key size in bits [default "2048"] | {key_file} = Output file for private key [default "key.pem"] | {cert_file} = Output file for certificate [default "cert.pem"] | {validity_days} = Number of days the certificate is valid [default "365"]
+openssl req -x509 -newkey rsa:{key_bits} -nodes -keyout {key_file} -out {cert_file} -days {validity_days}

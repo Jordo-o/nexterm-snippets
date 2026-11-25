@@ -1,0 +1,14 @@
+# @name: nginx | Create Basic Virtual Host
+# @description: Creates a basic virtual host configuration Group: Nginx Virtual Host Management. Template: replace placeholders before running. {site_name} = Name of the site configuration file | {domain} = Domain name [default "example.com"] | {document_root} = Document root path [default "/var/www/html"]
+sudo tee /etc/nginx/sites-available/{site_name} << 'EOF'
+server {
+    listen 80;
+    server_name {domain};
+    root {document_root};
+    index index.html index.htm;
+    
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+EOF

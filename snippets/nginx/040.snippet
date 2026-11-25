@@ -1,0 +1,3 @@
+# @name: nginx | Check Nginx CPU Usage
+# @description: Shows CPU usage of Nginx processes Group: Nginx Performance Monitoring.
+top -p $(pgrep nginx | tr '\n' ',' | sed 's/,$//')

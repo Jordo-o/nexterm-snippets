@@ -1,0 +1,3 @@
+# @name: sed-awk | Join Two Files
+# @description: Joins two files based on common field Group: Awk Advanced Operations. Template: replace placeholders before running. {field1} = Key field in first file [default "1"] | {field2} = Value field in first file [default "2"] | {field3} = Key field in second file [default "1"] | {file1} = Path to first file | {file2} = Path to second file
+awk 'FNR==NR{a[${field1}]=${field2};next} ${field3} in a{print $0, a[${field3}]}' {file1} {file2}

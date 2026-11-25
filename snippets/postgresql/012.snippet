@@ -1,0 +1,3 @@
+# @name: postgresql | Grant Database Privileges
+# @description: Grants all privileges on a database to a user Group: PostgreSQL User and Role Management. Template: replace placeholders before running. {database_name} = Name of the database | {username} = Username to grant privileges to
+psql -c "GRANT ALL PRIVILEGES ON DATABASE {database_name} TO {username};"

@@ -1,0 +1,3 @@
+# @name: linux | Ping Host
+# @description: Sends ICMP packets to test network connectivity Group: Network Operations. Template: replace placeholders before running. {count} = Number of ping requests to send [default "4"] | {hostname} = Hostname or IP address to ping
+ping -c {count} {hostname}

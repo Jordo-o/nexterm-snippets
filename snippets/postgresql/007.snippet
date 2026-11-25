@@ -1,0 +1,3 @@
+# @name: postgresql | Create Database with Owner
+# @description: Creates a database with a specific owner Group: PostgreSQL Database Management. Template: replace placeholders before running. {host} = Database host [default "localhost"] | {port} = Database port [default "5432"] | {username} = Database username [default "postgres"] | {owner} = Database owner | {database_name} = Name of the database to create
+createdb -h {host} -p {port} -U {username} -O {owner} {database_name}

@@ -1,0 +1,3 @@
+# @name: sed-awk | Delete Range of Lines
+# @description: Deletes a range of lines Group: Sed Line Operations. Template: replace placeholders before running. {start} = Starting line number [default "1"] | {end} = Ending line number [default "5"] | {file} = Path to the file
+sed '{start},{end}d' {file}

@@ -1,0 +1,3 @@
+# @name: jq | Conditional Value
+# @description: Returns different values based on condition Group: JQ Conditional Operations. Template: replace placeholders before running. {field_name} = Field name to check | {true_value} = Value if condition is true [default "yes"] | {false_value} = Value if condition is false [default "no"] | {json_file} = Path to JSON file or '-' for stdin
+jq 'if .{field_name} then "{true_value}" else "{false_value}" end' {json_file}

@@ -1,0 +1,3 @@
+# @name: aws | Delete S3 Bucket
+# @description: Deletes an S3 bucket and all its contents Group: AWS S3 Commands. Template: replace placeholders before running. {bucket_name} = Name of the bucket to delete
+aws s3 rb s3://{bucket_name} --force

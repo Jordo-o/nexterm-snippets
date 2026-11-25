@@ -1,0 +1,3 @@
+# @name: sed-awk | Append Text After Line
+# @description: Appends text after a specific line Group: Sed Line Operations. Template: replace placeholders before running. {line_number} = Line number to append after [default "1"] | {text} = Text to append | {file} = Path to the file
+sed '{line_number}a\{text}' {file}

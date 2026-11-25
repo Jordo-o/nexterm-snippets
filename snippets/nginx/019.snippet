@@ -1,0 +1,3 @@
+# @name: nginx | View Access Logs with Timestamps
+# @description: Views access logs with timestamps Group: Nginx Log Management.
+sudo tail -f /var/log/nginx/access.log | while read line; do echo "$(date): $line"; done

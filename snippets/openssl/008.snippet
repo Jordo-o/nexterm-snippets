@@ -1,0 +1,3 @@
+# @name: openssl | Sign CSR with CA
+# @description: Signs a CSR with a CA certificate and key Group: CSR Management. Template: replace placeholders before running. {csr_file} = Input CSR file [default "cert.csr"] | {ca_cert} = CA certificate file [default "ca.pem"] | {ca_key} = CA private key file [default "cakey.pem"] | {cert_file} = Output signed certificate file [default "cert.pem"] | {validity_days} = Number of days the certificate is valid [default "365"]
+openssl x509 -req -in {csr_file} -CA {ca_cert} -CAkey {ca_key} -CAcreateserial -out {cert_file} -days {validity_days}

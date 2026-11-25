@@ -1,0 +1,3 @@
+# @name: sed-awk | Insert Text Before Line
+# @description: Inserts text before a specific line Group: Sed Line Operations. Template: replace placeholders before running. {line_number} = Line number to insert before [default "1"] | {text} = Text to insert | {file} = Path to the file
+sed '{line_number}i\{text}' {file}

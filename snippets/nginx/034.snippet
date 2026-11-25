@@ -1,0 +1,3 @@
+# @name: nginx | Test with Custom Headers
+# @description: Tests Nginx with custom headers Group: Nginx Testing and Validation. Template: replace placeholders before running. {header_name} = Header name [default "User-Agent"] | {header_value} = Header value [default "TestBot/1.0"] | {domain} = Domain name or IP address [default "localhost"]
+curl -H "{header_name}: {header_value}" http://{domain}

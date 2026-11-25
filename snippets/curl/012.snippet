@@ -1,0 +1,3 @@
+# @name: curl | Custom Header
+# @description: Makes a request with a custom header Group: Curl Headers and Options. Template: replace placeholders before running. {header_name} = Header name [default "User-Agent"] | {header_value} = Header value [default "MyApp/1.0"] | {url} = URL to request
+curl -H "{header_name}: {header_value}" {url}

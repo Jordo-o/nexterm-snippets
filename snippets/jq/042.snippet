@@ -1,0 +1,3 @@
+# @name: jq | Check if Value is Null
+# @description: Checks if field value is null Group: JQ Conditional Operations. Template: replace placeholders before running. {field_name} = Field name to check | {json_file} = Path to JSON file or '-' for stdin
+jq '.{field_name} == null' {json_file}

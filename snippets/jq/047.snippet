@@ -1,0 +1,3 @@
+# @name: jq | Reduce Array
+# @description: Reduces array to a single value Group: JQ Advanced Operations. Template: replace placeholders before running. {field_name} = Field name to sum | {json_file} = Path to JSON file or '-' for stdin
+jq 'reduce .[] as $item (0; . + $item.{field_name})' {json_file}

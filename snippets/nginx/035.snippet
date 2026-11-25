@@ -1,0 +1,3 @@
+# @name: nginx | Test Load Balancing
+# @description: Tests load balancing by making multiple requests Group: Nginx Testing and Validation. Template: replace placeholders before running. {domain} = Domain name or IP address [default "localhost"]
+for i in {1..10}; do curl -s http://{domain} | head -1; done

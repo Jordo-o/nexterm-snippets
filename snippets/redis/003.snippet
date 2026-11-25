@@ -1,0 +1,3 @@
+# @name: redis | Connect to Redis Database
+# @description: Connects to a specific Redis database Group: Redis Connection and Authentication. Template: replace placeholders before running. {host} = Redis host [default "localhost"] | {port} = Redis port [default "6379"] | {database} = Database number (0-15) [default "0"]
+redis-cli -h {host} -p {port} -n {database}

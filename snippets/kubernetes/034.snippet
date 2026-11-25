@@ -1,0 +1,3 @@
+# @name: kubernetes | Get Resource JSON
+# @description: Gets resource configuration in JSON format Group: Kubernetes Resource Inspection. Template: replace placeholders before running. {resource_type} = Type of resource (pod, service, deployment, etc.) | {resource_name} = Name of the resource
+kubectl get {resource_type} {resource_name} -o json

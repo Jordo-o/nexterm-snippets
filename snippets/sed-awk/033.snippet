@@ -1,0 +1,3 @@
+# @name: sed-awk | Filter by Field Value
+# @description: Prints lines where field equals value Group: Awk Pattern Matching. Template: replace placeholders before running. {field_number} = Field number to check [default "1"] | {value} = Value to match | {file} = Path to the file
+awk '${field_number} == "{value}"' {file}

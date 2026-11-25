@@ -1,0 +1,3 @@
+# @name: aws | Get CloudWatch Metric Statistics
+# @description: Gets CloudWatch metric statistics Group: AWS CloudWatch Commands. Template: replace placeholders before running. {namespace} = Metric namespace [default "AWS/EC2"] | {metric_name} = Name of the metric [default "CPUUtilization"] | {instance_id} = Instance ID | {start_time} = Start time (ISO format) [default "2024-01-01T00:00:00Z"] | {end_time} = End time (ISO format) [default "2024-01-01T23:59:59Z"] | {period} = Period in seconds [default "3600"]
+aws cloudwatch get-metric-statistics --namespace {namespace} --metric-name {metric_name} --dimensions Name=InstanceId,Value={instance_id} --statistics Average --start-time {start_time} --end-time {end_time} --period {period}

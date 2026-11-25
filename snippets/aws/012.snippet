@@ -1,0 +1,3 @@
+# @name: aws | Create Volume
+# @description: Creates a new EBS volume Group: AWS EC2 Commands. Template: replace placeholders before running. {size} = The size of the volume in GiB [default "10"] | {az} = The availability zone (e.g., us-east-1a) | {volume_type} = The volume type (e.g., gp3, io1) [default "gp3"]
+aws ec2 create-volume --size {size} --availability-zone {az} --volume-type {volume_type}

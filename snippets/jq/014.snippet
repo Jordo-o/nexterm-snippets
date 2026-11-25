@@ -1,0 +1,3 @@
+# @name: jq | Sort Array by Field
+# @description: Sorts an array by a specific field Group: JQ Array Operations. Template: replace placeholders before running. {field_name} = Field name to sort by | {json_file} = Path to JSON file or '-' for stdin
+jq 'sort_by(.{field_name})' {json_file}

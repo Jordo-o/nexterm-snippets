@@ -1,0 +1,3 @@
+# @name: jq | Check if Field Exists
+# @description: Checks if field exists in object Group: JQ Conditional Operations. Template: replace placeholders before running. {field_name} = Field name to check | {json_file} = Path to JSON file or '-' for stdin
+jq 'has("{field_name}")' {json_file}

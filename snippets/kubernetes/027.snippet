@@ -1,0 +1,3 @@
+# @name: kubernetes | Create ConfigMap
+# @description: Creates a ConfigMap with key-value pairs Group: Kubernetes ConfigMap and Secret Management. Template: replace placeholders before running. {configmap_name} = Name of the ConfigMap | {key} = Key name | {value} = Value for the key
+kubectl create configmap {configmap_name} --from-literal={key}={value}

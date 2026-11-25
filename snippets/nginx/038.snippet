@@ -1,0 +1,3 @@
+# @name: nginx | Monitor Active Connections (HTTPS)
+# @description: Monitors active connections on port 443 Group: Nginx Performance Monitoring.
+watch -n 1 'netstat -an | grep :443 | wc -l'

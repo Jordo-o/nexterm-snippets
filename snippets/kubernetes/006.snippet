@@ -1,0 +1,3 @@
+# @name: kubernetes | Execute Command in Pod
+# @description: Executes a command in a pod Group: Kubernetes Pod Management. Template: replace placeholders before running. {pod_name} = Name of the pod | {command} = Command to execute [default "/bin/bash"]
+kubectl exec -it {pod_name} -- {command}

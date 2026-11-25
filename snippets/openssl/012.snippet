@@ -1,0 +1,3 @@
+# @name: openssl | Inspect Certificate
+# @description: Displays detailed information about a certificate Group: Verification and Inspection. Template: replace placeholders before running. {cert_file} = Certificate file to inspect [default "cert.pem"]
+openssl x509 -in {cert_file} -text -noout

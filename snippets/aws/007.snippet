@@ -1,0 +1,3 @@
+# @name: aws | Create Security Group
+# @description: Creates a new security group in the specified VPC Group: AWS EC2 Commands. Template: replace placeholders before running. {group_name} = The name of the security group | {description} = A description for the security group | {vpc_id} = The ID of the VPC
+aws ec2 create-security-group --group-name {group_name} --description {description} --vpc-id {vpc_id}

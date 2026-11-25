@@ -1,0 +1,3 @@
+# @name: sed-awk | Find Minimum Value
+# @description: Finds minimum value in a field Group: Awk Mathematical Operations. Template: replace placeholders before running. {field_number} = Field number to check [default "1"] | {file} = Path to the file
+awk 'NR==1{min=${field_number}} ${field_number}<min{min=${field_number}} END{print min}' {file}

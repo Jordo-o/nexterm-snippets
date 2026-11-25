@@ -1,0 +1,3 @@
+# @name: postgresql | Create User with Privileges
+# @description: Creates a user with database and role creation privileges Group: PostgreSQL User and Role Management. Template: replace placeholders before running. {username} = Username to create | {password} = Password for the user
+psql -c "CREATE USER {username} WITH PASSWORD '{password}' CREATEDB CREATEROLE;"

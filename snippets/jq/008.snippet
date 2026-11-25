@@ -1,0 +1,3 @@
+# @name: jq | Filter by Numeric Value
+# @description: Filters array elements by numeric comparison Group: JQ Filtering and Selection. Template: replace placeholders before running. {field_name} = Field name to filter by | {operator} = Comparison operator (>, <, >=, <=, ==) [default ">"] | {value} = Numeric value to compare [default "0"] | {json_file} = Path to JSON file or '-' for stdin
+jq '.[] | select(.{field_name} {operator} {value})' {json_file}

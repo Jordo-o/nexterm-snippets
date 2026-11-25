@@ -1,0 +1,3 @@
+# @name: aws | Create IAM Role
+# @description: Creates a new IAM role Group: AWS IAM Commands. Template: replace placeholders before running. {role_name} = Name of the role to create | {trust_policy} = Trust policy JSON document [default "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"lambda.amazonaws.com\"},\"Action\":\"sts:AssumeRole\"}]}"]
+aws iam create-role --role-name {role_name} --assume-role-policy-document '{trust_policy}'

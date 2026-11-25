@@ -1,0 +1,3 @@
+# @name: postgresql | Grant Table Privileges
+# @description: Grants all privileges on a table to a user Group: PostgreSQL User and Role Management. Template: replace placeholders before running. {table_name} = Name of the table | {username} = Username to grant privileges to
+psql -c "GRANT ALL PRIVILEGES ON TABLE {table_name} TO {username};"

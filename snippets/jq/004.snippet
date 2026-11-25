@@ -1,0 +1,3 @@
+# @name: jq | Get Nested Field
+# @description: Gets a nested field from JSON object Group: JQ Basic Operations. Template: replace placeholders before running. {field1} = First level field name | {field2} = Second level field name | {json_file} = Path to JSON file or '-' for stdin
+jq '.{field1}.{field2}' {json_file}

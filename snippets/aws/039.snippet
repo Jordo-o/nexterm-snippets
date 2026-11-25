@@ -1,0 +1,3 @@
+# @name: aws | Create RDS Instance
+# @description: Creates a new RDS database instance Group: AWS RDS Commands. Template: replace placeholders before running. {db_identifier} = Database instance identifier | {instance_class} = Instance class (e.g., db.t3.micro) [default "db.t3.micro"] | {engine} = Database engine (e.g., mysql, postgres) [default "mysql"] | {username} = Master username | {password} = Master password | {storage} = Allocated storage in GB [default "20"]
+aws rds create-db-instance --db-instance-identifier {db_identifier} --db-instance-class {instance_class} --engine {engine} --master-username {username} --master-user-password {password} --allocated-storage {storage}

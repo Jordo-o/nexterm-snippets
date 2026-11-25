@@ -1,0 +1,3 @@
+# @name: jq | Transform Object
+# @description: Transforms a field value Group: JQ Advanced Operations. Template: replace placeholders before running. {field_name} = Field name to transform | {transformation} = Transformation to apply (e.g., length, tostring) [default "length"] | {json_file} = Path to JSON file or '-' for stdin
+jq '.{{field_name}: .{field_name} | {transformation}}' {json_file}

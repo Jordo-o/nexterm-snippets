@@ -1,0 +1,3 @@
+# @name: kubernetes | Expose Deployment as Service
+# @description: Exposes a deployment as a service Group: Kubernetes Service Management. Template: replace placeholders before running. {deployment_name} = Name of the deployment | {port} = Service port [default "80"] | {target_port} = Target port on pods [default "8080"] | {service_type} = Type of service (ClusterIP, NodePort, LoadBalancer) [default "ClusterIP"]
+kubectl expose deployment {deployment_name} --port={port} --target-port={target_port} --type={service_type}

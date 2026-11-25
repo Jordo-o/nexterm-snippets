@@ -1,0 +1,3 @@
+# @name: postgresql | Alter User Password
+# @description: Changes a user's password Group: PostgreSQL User and Role Management. Template: replace placeholders before running. {username} = Username | {password} = New password
+psql -c "ALTER USER {username} WITH PASSWORD '{password}';"

@@ -1,0 +1,3 @@
+# @name: nodejs | Run Node with Memory Limit
+# @description: Runs Node.js with a specific memory limit Group: Node.js Process Management. Template: replace placeholders before running. {memory_size} = Memory size in MB [default "4096"] | {file_name} = Name of the Node.js file
+node --max-old-space-size={memory_size} {file_name}

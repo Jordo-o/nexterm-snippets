@@ -1,0 +1,3 @@
+# @name: jq | Group by Field
+# @description: Groups array elements by field value Group: JQ Advanced Operations. Template: replace placeholders before running. {field_name} = Field name to group by | {json_file} = Path to JSON file or '-' for stdin
+jq 'group_by(.{field_name})' {json_file}

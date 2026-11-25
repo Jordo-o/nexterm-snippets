@@ -1,0 +1,3 @@
+# @name: nginx | View Logs by Date
+# @description: Views logs for a specific date Group: Nginx Log Management. Template: replace placeholders before running. {date} = Date to search for (e.g., 2024-01-15)
+sudo grep "{date}" /var/log/nginx/access.log

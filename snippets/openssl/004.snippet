@@ -1,0 +1,3 @@
+# @name: openssl | Generate RSA Private Key
+# @description: Generates an RSA private key Group: Key Management. Template: replace placeholders before running. {key_file} = Output file for private key [default "key.pem"] | {key_bits} = RSA key size in bits [default "2048"]
+openssl genrsa -out {key_file} {key_bits}

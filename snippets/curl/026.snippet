@@ -1,0 +1,3 @@
+# @name: curl | Test API Endpoint
+# @description: Tests an API endpoint with JSON data Group: Curl API Testing. Template: replace placeholders before running. {method} = HTTP method (GET, POST, PUT, DELETE) [default "POST"] | {json_data} = JSON data to send [default "{\"key\": \"value\"}"] | {url} = API endpoint URL
+curl -X {method} -H "Content-Type: application/json" -d '{json_data}' {url}

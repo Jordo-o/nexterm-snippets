@@ -1,0 +1,3 @@
+# @name: postgresql | Connect with Connection String
+# @description: Connects using a connection string Group: PostgreSQL Connection and Authentication. Template: replace placeholders before running. {username} = Database username [default "postgres"] | {password} = Database password | {host} = Database host [default "localhost"] | {port} = Database port [default "5432"] | {database} = Database name [default "postgres"]
+psql "postgresql://{username}:{password}@{host}:{port}/{database}"

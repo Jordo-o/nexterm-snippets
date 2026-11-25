@@ -1,0 +1,3 @@
+# @name: jq | String Replace
+# @description: Replaces pattern in string with replacement Group: JQ String Operations. Template: replace placeholders before running. {pattern} = Pattern to replace | {replacement} = Replacement string | {json_file} = Path to JSON file or '-' for stdin
+jq 'gsub("{pattern}"; "{replacement}")' {json_file}

@@ -1,0 +1,3 @@
+# @name: jq | String Substring
+# @description: Gets a substring from a string Group: JQ String Operations. Template: replace placeholders before running. {start} = Start position [default "0"] | {end} = End position [default "5"] | {json_file} = Path to JSON file or '-' for stdin
+jq '.[{start}:{end}]' {json_file}

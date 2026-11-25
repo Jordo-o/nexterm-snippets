@@ -1,0 +1,3 @@
+# @name: nginx | Test Specific URL
+# @description: Tests a specific URL with verbose output Group: Nginx Testing and Validation. Template: replace placeholders before running. {domain} = Domain name or IP address [default "localhost"] | {path} = URL path to test [default "/"]
+curl -v http://{domain}{path}

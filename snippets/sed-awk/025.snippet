@@ -1,0 +1,3 @@
+# @name: sed-awk | Print Last N Lines (025)
+# @description: Prints the last N lines Group: Awk Basic Operations. Template: replace placeholders before running. {n} = Number of lines to print [default "5"] | {file} = Path to the file
+awk 'NR>FNR{print line[NR%{n}]} {line[NR%{n}]=$0}' {file}

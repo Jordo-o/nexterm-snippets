@@ -1,0 +1,3 @@
+# @name: docker | Execute Command in Container
+# @description: Executes a command in a running container Group: Docker Container Management. Template: replace placeholders before running. {container_name} = Name or ID of the container | {command} = Command to execute [default "/bin/bash"]
+docker exec -it {container_name} {command}

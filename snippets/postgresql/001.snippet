@@ -1,0 +1,3 @@
+# @name: postgresql | Connect to PostgreSQL
+# @description: Connects to a PostgreSQL database Group: PostgreSQL Connection and Authentication. Template: replace placeholders before running. {host} = Database host [default "localhost"] | {port} = Database port [default "5432"] | {username} = Database username [default "postgres"] | {database} = Database name [default "postgres"]
+psql -h {host} -p {port} -U {username} -d {database}

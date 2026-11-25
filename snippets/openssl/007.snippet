@@ -1,0 +1,3 @@
+# @name: openssl | Generate CSR
+# @description: Generates a Certificate Signing Request Group: CSR Management. Template: replace placeholders before running. {key_file} = Input private key file [default "key.pem"] | {csr_file} = Output CSR file [default "cert.csr"]
+openssl req -new -key {key_file} -out {csr_file}

@@ -1,0 +1,3 @@
+# @name: aws | Create Route53 Record
+# @description: Creates a DNS record in Route53 Group: AWS Route53 Commands. Template: replace placeholders before running. {zone_id} = Hosted zone ID | {change_batch} = JSON change batch [default "{\"Changes\":[{\"Action\":\"CREATE\",\"ResourceRecordSet\":{\"Name\":\"example.com\",\"Type\":\"A\",\"TTL\":300,\"ResourceRecords\":[{\"Value\":\"1.2.3.4\"}]}}]}"]
+aws route53 change-resource-record-sets --hosted-zone-id {zone_id} --change-batch '{change_batch}'

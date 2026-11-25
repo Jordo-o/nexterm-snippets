@@ -1,0 +1,3 @@
+# @name: kubernetes | Scale Horizontal Pod Autoscaler
+# @description: Creates a horizontal pod autoscaler for a deployment Group: Kubernetes Scaling Operations. Template: replace placeholders before running. {deployment_name} = Name of the deployment | {min_replicas} = Minimum number of replicas [default "2"] | {max_replicas} = Maximum number of replicas [default "10"] | {cpu_percent} = CPU utilization percentage threshold [default "80"]
+kubectl autoscale deployment {deployment_name} --min={min_replicas} --max={max_replicas} --cpu-percent={cpu_percent}

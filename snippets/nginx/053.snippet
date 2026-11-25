@@ -1,0 +1,23 @@
+# @name: nginx | Create HTTPS Virtual Host
+# @description: Creates an HTTPS virtual host with SSL redirect Group: Nginx Virtual Host Management. Template: replace placeholders before running. {site_name} = Name of the site configuration file | {domain} = Domain name [default "example.com"] | {document_root} = Document root path [default "/var/www/html"] | {cert_file} = SSL certificate file path [default "/etc/nginx/ssl/certificate.crt"] | {key_file} = SSL private key file path [default "/etc/nginx/ssl/private.key"]
+sudo tee /etc/nginx/sites-available/{site_name} << 'EOF'
+server {
+    listen 80;
+    server_name {domain};
+    return 301 https://$server_name$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name {domain};
+    root {document_root};
+    index index.html index.htm;
+    
+    ssl_certificate {cert_file};
+    ssl_certificate_key {key_file};
+    
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+EOF

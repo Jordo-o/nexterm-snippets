@@ -1,0 +1,3 @@
+# @name: python | Upgrade All Packages
+# @description: Upgrades all outdated packages Group: Pip Package Management.
+pip list --outdated | cut -d ' ' -f1 | xargs -n1 pip install -U

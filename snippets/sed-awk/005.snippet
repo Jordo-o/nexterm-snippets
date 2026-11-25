@@ -1,0 +1,3 @@
+# @name: sed-awk | Print Last N Lines
+# @description: Prints the last N lines (example for 5 lines) Group: Sed Basic Text Operations. Template: replace placeholders before running. {file} = Path to the file
+sed -n '$!N;$!N;$!N;$!N;{N;p;}' {file}

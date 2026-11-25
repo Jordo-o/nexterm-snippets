@@ -1,0 +1,3 @@
+# @name: nginx | Check Module Availability
+# @description: Lists modules that were compiled out Group: Nginx Module Management.
+nginx -V 2>&1 | grep -o 'without-[^\s]*'

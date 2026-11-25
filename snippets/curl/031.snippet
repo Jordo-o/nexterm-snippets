@@ -1,0 +1,3 @@
+# @name: curl | Show Response Time
+# @description: Shows only the response time Group: Curl Debugging and Verbose Output. Template: replace placeholders before running. {url} = URL to request
+curl -w "Time: %{time_total}s\n" -o /dev/null -s {url}

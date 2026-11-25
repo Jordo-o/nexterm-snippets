@@ -1,0 +1,3 @@
+# @name: nginx | Test SSL Connection
+# @description: Tests SSL connection to a domain Group: Nginx SSL/TLS Management. Template: replace placeholders before running. {domain} = Domain name [default "example.com"] | {port} = Port number [default "443"]
+openssl s_client -connect {domain}:{port}

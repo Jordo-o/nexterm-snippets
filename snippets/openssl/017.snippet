@@ -1,0 +1,3 @@
+# @name: openssl | Test SSL/TLS Connection
+# @description: Tests an SSL/TLS connection to a server Group: SSL/TLS Operations. Template: replace placeholders before running. {host} = Hostname or IP address of the server [default "localhost"] | {port} = Port number for the connection [default "443"]
+openssl s_client -connect {host}:{port}

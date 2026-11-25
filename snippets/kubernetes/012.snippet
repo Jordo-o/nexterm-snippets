@@ -1,0 +1,3 @@
+# @name: kubernetes | Scale Deployment
+# @description: Scales a deployment to the specified number of replicas Group: Kubernetes Deployment Management. Template: replace placeholders before running. {deployment_name} = Name of the deployment | {replicas} = Number of replicas [default "3"]
+kubectl scale deployment {deployment_name} --replicas={replicas}

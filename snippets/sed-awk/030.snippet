@@ -1,0 +1,3 @@
+# @name: sed-awk | Custom Field Separator
+# @description: Uses custom field separator Group: Awk Field Operations. Template: replace placeholders before running. {separator} = Field separator [default ","] | {field_number} = Field number to print [default "1"] | {file} = Path to the file
+awk -F'{separator}' '{print ${field_number}}' {file}

@@ -1,0 +1,3 @@
+# @name: sed-awk | Print Range of Lines (023)
+# @description: Prints a range of lines Group: Awk Basic Operations. Template: replace placeholders before running. {start} = Starting line number [default "1"] | {end} = Ending line number [default "10"] | {file} = Path to the file
+awk 'NR>={start} && NR<={end}' {file}

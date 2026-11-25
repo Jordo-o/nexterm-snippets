@@ -1,0 +1,3 @@
+# @name: sed-awk | Sum Numeric Field
+# @description: Sums values in a numeric field Group: Awk Mathematical Operations. Template: replace placeholders before running. {field_number} = Field number to sum [default "1"] | {file} = Path to the file
+awk '{sum += ${field_number}} END {print sum}' {file}

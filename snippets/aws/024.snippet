@@ -1,0 +1,3 @@
+# @name: aws | Invoke Lambda Function
+# @description: Invokes a Lambda function Group: AWS Lambda Commands. Template: replace placeholders before running. {function_name} = Name of the Lambda function | {payload} = JSON payload [default "{}"] | {output_file} = Output file for response [default "response.json"]
+aws lambda invoke --function-name {function_name} --payload '{payload}' {output_file}

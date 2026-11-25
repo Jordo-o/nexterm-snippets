@@ -1,0 +1,3 @@
+# @name: kubernetes | Set Default Namespace
+# @description: Sets the default namespace for kubectl commands Group: Kubernetes Namespace Management. Template: replace placeholders before running. {namespace_name} = Name of the namespace to set as default
+kubectl config set-context --current --namespace={namespace_name}

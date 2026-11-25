@@ -1,0 +1,3 @@
+# @name: nginx | List Installed Modules
+# @description: Lists installed Nginx modules Group: Nginx Module Management.
+nginx -V 2>&1 | grep -o 'with-[^\s]*'

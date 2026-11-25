@@ -1,0 +1,3 @@
+# @name: postgresql | Kill Connection
+# @description: Terminates a database connection Group: PostgreSQL Maintenance. Template: replace placeholders before running. {pid} = Process ID of the connection to terminate
+psql -c "SELECT pg_terminate_backend({pid});"

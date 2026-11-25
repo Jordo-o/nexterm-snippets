@@ -1,0 +1,3 @@
+# @name: nginx | Check SSL Certificate
+# @description: Displays SSL certificate information Group: Nginx SSL/TLS Management. Template: replace placeholders before running. {cert_file} = Certificate file path [default "/etc/nginx/ssl/certificate.crt"]
+openssl x509 -in {cert_file} -text -noout

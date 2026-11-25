@@ -1,0 +1,3 @@
+# @name: curl | Show Response Code Only
+# @description: Shows only the HTTP response code Group: Curl API Testing. Template: replace placeholders before running. {url} = URL to request
+curl -s -o /dev/null -w "%{http_code}" {url}

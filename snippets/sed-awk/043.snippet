@@ -1,0 +1,3 @@
+# @name: sed-awk | Sort by Field
+# @description: Sorts lines by a specific field Group: Awk Advanced Operations. Template: replace placeholders before running. {field_number} = Field number to sort by [default "1"] | {file} = Path to the file
+awk '{print ${field_number}, $0}' {file} | sort -n | cut -d' ' -f2-

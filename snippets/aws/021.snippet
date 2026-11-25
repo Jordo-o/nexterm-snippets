@@ -1,0 +1,3 @@
+# @name: aws | Sync Directory to S3
+# @description: Syncs a local directory to S3 Group: AWS S3 Commands. Template: replace placeholders before running. {local_directory} = Path to local directory | {bucket_name} = Name of the S3 bucket | {prefix} = S3 prefix
+aws s3 sync {local_directory} s3://{bucket_name}/{prefix}

@@ -1,0 +1,3 @@
+# @name: docker | Tag Docker Image
+# @description: Tags a Docker image Group: Docker Image Management. Template: replace placeholders before running. {source_image} = Source image name | {source_tag} = Source image tag [default "latest"] | {target_image} = Target image name | {target_tag} = Target image tag [default "latest"]
+docker tag {source_image}:{source_tag} {target_image}:{target_tag}

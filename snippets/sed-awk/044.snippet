@@ -1,0 +1,3 @@
+# @name: sed-awk | Remove Duplicates
+# @description: Removes duplicate lines based on a field Group: Awk Advanced Operations. Template: replace placeholders before running. {field_number} = Field number to check for duplicates [default "1"] | {file} = Path to the file
+awk '!seen[${field_number}]++' {file}

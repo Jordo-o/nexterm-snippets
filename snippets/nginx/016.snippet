@@ -1,0 +1,3 @@
+# @name: nginx | Show Error Log Path
+# @description: Sets the error log path Group: Nginx Configuration Management. Template: replace placeholders before running. {error_log} = Error log file path [default "/var/log/nginx/error.log"]
+nginx -e {error_log}

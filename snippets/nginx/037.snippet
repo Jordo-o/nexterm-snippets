@@ -1,0 +1,3 @@
+# @name: nginx | Monitor Active Connections
+# @description: Monitors active connections on port 80 Group: Nginx Performance Monitoring.
+watch -n 1 'netstat -an | grep :80 | wc -l'

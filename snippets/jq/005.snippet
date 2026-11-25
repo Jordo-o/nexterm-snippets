@@ -1,0 +1,3 @@
+# @name: jq | Get Array Element
+# @description: Gets an element from JSON array by index Group: JQ Basic Operations. Template: replace placeholders before running. {index} = Array index (0-based) [default "0"] | {json_file} = Path to JSON file or '-' for stdin
+jq '.[{index}]' {json_file}

@@ -1,0 +1,3 @@
+# @name: sed-awk | Custom Output Format
+# @description: Formats output with custom format Group: Awk Advanced Operations. Template: replace placeholders before running. {field1} = First field to format [default "1"] | {field2} = Second field to format [default "2"] | {file} = Path to the file
+awk '{printf "%s: %s\n", ${field1}, ${field2}}' {file}

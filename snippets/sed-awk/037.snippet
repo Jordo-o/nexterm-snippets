@@ -1,0 +1,3 @@
+# @name: sed-awk | Average Numeric Field
+# @description: Calculates average of numeric field Group: Awk Mathematical Operations. Template: replace placeholders before running. {field_number} = Field number to average [default "1"] | {file} = Path to the file
+awk '{sum += ${field_number}; count++} END {print sum/count}' {file}

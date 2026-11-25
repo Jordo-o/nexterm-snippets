@@ -1,0 +1,3 @@
+# @name: sed-awk | Replace Entire Line
+# @description: Replaces an entire line with new text Group: Sed Line Operations. Template: replace placeholders before running. {line_number} = Line number to replace [default "1"] | {new_line} = New line content | {file} = Path to the file
+sed '{line_number}c\{new_line}' {file}

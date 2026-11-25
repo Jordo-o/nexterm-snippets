@@ -1,0 +1,3 @@
+# @name: sed-awk | Print All Fields
+# @description: Prints all fields from each line Group: Awk Field Operations. Template: replace placeholders before running. {file} = Path to the file
+awk '{for(i=1;i<=NF;i++) print $i}' {file}

@@ -1,0 +1,3 @@
+# @name: postgresql | Revoke Privileges
+# @description: Revokes privileges from a user Group: PostgreSQL User and Role Management. Template: replace placeholders before running. {database_name} = Name of the database | {username} = Username to revoke privileges from
+psql -c "REVOKE ALL PRIVILEGES ON DATABASE {database_name} FROM {username};"

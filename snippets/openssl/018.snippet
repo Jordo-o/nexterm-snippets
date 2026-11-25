@@ -1,0 +1,3 @@
+# @name: openssl | Generate Diffie-Hellman Parameters
+# @description: Generates Diffie-Hellman parameters Group: SSL/TLS Operations. Template: replace placeholders before running. {dh_file} = Output file for DH parameters [default "dhparam.pem"] | {key_bits} = Key size in bits [default "2048"]
+openssl dhparam -out {dh_file} {key_bits}

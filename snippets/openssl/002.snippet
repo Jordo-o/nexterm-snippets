@@ -1,0 +1,3 @@
+# @name: openssl | Convert PEM to DER
+# @description: Converts a PEM certificate to DER format Group: Certificate Management. Template: replace placeholders before running. {pem_file} = Input PEM certificate file [default "cert.pem"] | {der_file} = Output DER certificate file [default "cert.der"]
+openssl x509 -outform der -in {pem_file} -out {der_file}

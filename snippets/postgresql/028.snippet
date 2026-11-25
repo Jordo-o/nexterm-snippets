@@ -1,0 +1,3 @@
+# @name: postgresql | Insert Record
+# @description: Inserts a new record into a table Group: PostgreSQL Data Operations. Template: replace placeholders before running. {table_name} = Name of the table | {columns} = Column names (e.g., name, email) | {values} = Values to insert (e.g., 'John', 'john@example.com')
+psql -c "INSERT INTO {table_name} ({columns}) VALUES ({values});"

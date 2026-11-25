@@ -1,0 +1,3 @@
+# @name: jq | Get Array Range
+# @description: Gets a range of elements from an array Group: JQ Array Operations. Template: replace placeholders before running. {start} = Start index [default "0"] | {end} = End index [default "5"] | {json_file} = Path to JSON file or '-' for stdin
+jq '.[{start}:{end}]' {json_file}

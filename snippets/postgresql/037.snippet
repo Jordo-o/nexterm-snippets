@@ -1,0 +1,3 @@
+# @name: postgresql | Show Database Size
+# @description: Shows the size of a database Group: PostgreSQL Performance and Monitoring. Template: replace placeholders before running. {database_name} = Name of the database
+psql -c "SELECT pg_size_pretty(pg_database_size('{database_name}'));"

@@ -1,0 +1,3 @@
+# @name: nginx | Monitor Request Rate
+# @description: Monitors request rate by minute Group: Nginx Performance Monitoring.
+tail -f /var/log/nginx/access.log | awk '{print $4}' | cut -d: -f2,3,4 | uniq -c

@@ -1,0 +1,3 @@
+# @name: sed-awk | Group by Field
+# @description: Groups and counts by field value Group: Awk Advanced Operations. Template: replace placeholders before running. {field_number} = Field number to group by [default "1"] | {file} = Path to the file
+awk '{count[${field_number}]++} END {for (key in count) print key, count[key]}' {file}

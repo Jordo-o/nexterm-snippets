@@ -1,0 +1,3 @@
+# @name: docker | Docker Compose Scale
+# @description: Scales services to the specified number of replicas Group: Docker Compose. Template: replace placeholders before running. {service_name} = Name of the service to scale | {replicas} = Number of replicas [default "2"]
+docker-compose up -d --scale {service_name}={replicas}
