@@ -1,40 +1,34 @@
-# Corpobit-snippets voor Nexterm
+# Corpobit Snippets for Nexterm
 
-Deze bron bevat 772 snippets uit https://github.com/corpobit/nexterm-snippets.
-De namen hebben een categorieprefix. De bestanden bevatten de oorspronkelijke
-opdrachten, de beschrijving en eventuele invulvelden met hun standaardwaarden.
+This source contains 772 snippets adapted from [corpobit/nexterm-snippets](https://github.com/corpobit/nexterm-snippets). Snippet names are prefixed with their category. Each file includes the original command, its description, and any placeholders and default values.
 
-## Toevoegen aan Nexterm
+## Add to Nexterm
 
-1. Zet `NTINDEX` en de map `snippets/` samen in de hoofdmap
-   van een Git-repository of op een HTTPS-webserver die Nexterm kan bereiken.
-2. Bij een openbare GitHub-repository met branch `main` is de bron-URL
-   `https://raw.githubusercontent.com/<eigenaar>/<repository>/main`.
-   Gebruik bij een webserver de HTTPS-URL van de map met `NTINDEX`.
-   Open in beide gevallen eerst `<bron-URL>/NTINDEX` om de locatie te controleren.
-3. Kies in Nexterm **Settings → Sources → Add**, geef de bron de naam
-   **Corpobit Snippets** en plak de bron-URL uit stap 2. Kies de bron vervolgens
-   in de lijst bij **Snippets**.
+1. In Nexterm, go to **Settings → Sources → Add**.
+2. Name the source **Corpobit Snippets** and enter this URL:
 
-### Publiceren met Git
+   ```text
+   https://raw.githubusercontent.com/Jordo-o/nexterm-snippets/main
+   ```
 
-Maak desgewenst op GitHub een lege openbare repository. Open een terminal in
-de uitgepakte map en vervang EIGENAAR en REPOSITORY door je eigen gegevens.
+3. Save the source, then select **Corpobit Snippets** in the **Snippets** panel.
+
+## Host your own copy
+
+Keep `NTINDEX` and the `snippets/` directory together at the root of a public Git repository or in a directory on an HTTPS server that Nexterm can reach. For a public GitHub repository on the `main` branch, use `https://raw.githubusercontent.com/<owner>/<repository>/main` as the source URL. For an HTTPS server, use the URL of the directory containing `NTINDEX`. To check the URL, open `<source-url>/NTINDEX`.
+
+To publish an extracted copy with Git, create an empty public repository on GitHub. Open a terminal in the extracted directory and replace `OWNER` and `REPOSITORY` with your own values.
 
 ```sh
 git init -b main
 git add .gitattributes LICENSE README.md NTINDEX snippets
 git commit -m "Add converted Nexterm snippets"
-git remote add origin https://github.com/EIGENAAR/REPOSITORY.git
+git remote add origin https://github.com/OWNER/REPOSITORY.git
 git push -u origin main
 ```
 
-## Invulvelden
+## Placeholders
 
-In 531 snippets staan velden zoals `{container_name}`. Nexterm vult die velden
-niet in en kan een gekozen snippet direct uitvoeren. Kopieer voor deze
-snippets de opdracht uit het `.snippet`-bestand, vervang de velden en voer de
-ingevulde opdracht uit in de bedoelde shell of client. De beschrijving bij
-elke template vermeldt de velden en eventuele standaardwaarden.
+531 snippets contain placeholders such as `{container_name}`. Nexterm can run a snippet as soon as you select it. To supply values, copy the command from the `.snippet` file, replace its placeholders, and run it in the appropriate shell or client. Each template's description lists its placeholders and any default values.
 
-Zie LICENSE voor de oorspronkelijke licentie.
+See [LICENSE](LICENSE) for the original license.
