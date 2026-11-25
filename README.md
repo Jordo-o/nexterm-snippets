@@ -2,6 +2,13 @@
 
 This source contains 772 snippets adapted from [corpobit/nexterm-snippets](https://github.com/corpobit/nexterm-snippets). Snippet names are prefixed with their category. Each file includes the original command, its description, and any placeholders and default values.
 
+> [!WARNING]
+> **Some snippets are destructive.** Nexterm can run a snippet as soon as you select it. Review the command and verify the active workspace, server, cluster, and namespace as applicable before selecting it.
+>
+> - [Terraform destroy](snippets/terraform/017.snippet) can destroy infrastructure managed by the active Terraform workspace. The `-auto-approve` variant skips the confirmation prompt.
+> - [Redis `FLUSHALL`](snippets/redis/058.snippet) deletes all keys from every database on the connected Redis server.
+> - [Kubernetes resource deletion](snippets/kubernetes/057.snippet) can delete every resource of the specified type in the active namespace. The collection includes bulk deletion snippets for pods, deployments, services, ConfigMaps, and Secrets.
+
 ## Add to Nexterm
 
 1. In Nexterm, go to **Settings → Sources → Add**.
